@@ -19,7 +19,7 @@ class CPanel
     public function __construct($cpanel_domain=null, $cpanel_api_token=null, $cpanel_username=null, $protocol='https', $port=2083)
     {
 
-        $this->config = Config::get('config');
+        $this->config = Config::get('cpanel-api');
 
         if(isset($cpanel_domain))
         {
