@@ -1,0 +1,54 @@
+{
+    "name": "keensoen/cpanel-api",
+    "description": "cPanel API which enables you to connect and carry out several common task in the cpanel",
+    "keywords": [
+        "keensoen",
+        "cpanel-api"
+    ],
+    "homepage": "https://github.com/keensoen/cpanel-api",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Agbadu Daniel S.",
+            "email": "sesughagbadu@yahoo.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Keensoen\\CPanelApi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Keensoen\\CPanelApi\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Keensoen\\CPanelApi\\CPanelApiServiceProvider"
+            ],
+            "aliases": {
+                "CPanelApi": "Keensoen\\CPanelApi\\CPanelApiFacade"
+            }
+        }
+    }
+}
