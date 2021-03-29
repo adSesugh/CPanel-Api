@@ -28,17 +28,17 @@ Learn more about at [CPanel UAPI](https://documentation.cpanel.net/display/DD/Gu
 #### Step 1) Install the Package
 Use following composer command to install the package
 ```bash  
-composer require keensoen/cpanelapi 
+composer require keensoen/cpanel-api 
 ```
 or
-Add `keensoen/cpanelapi` as a requirement to `composer.json`:
+Add `keensoen/cpanel-api` as a requirement to `composer.json`:
 
 ```
 {
     ...
     "require": {
         ...
-        "keensoen/cpanelapi": "^1.0"
+        "keensoen/cpanel-api": "^1.0"
     },
 }
 ```
@@ -52,7 +52,7 @@ $ composer update
 #### Step 2) Publish Configurations
 Run following command:
 ```
-php artisan vendor:publish --provider="keensone\CpanelAPi\CPanelApiServiceProvider"
+php artisan vendor:publish --provider="Keensoen\CPanelApi\CPanelApiServiceProvider"
 ```
 #### Step 3) Set CPanel details in `.env`
 ```
