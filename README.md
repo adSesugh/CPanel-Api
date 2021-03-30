@@ -87,7 +87,7 @@ Your password must be eight character above and should contain alphanumeric and 
 For example 
 
 ```php
-$cpanel = new Cpanel()
+$cpanel = new CPanel()
 $username = 'john.dansy';
 $password = 'ideaHeals@#12';
 $response = $cpanel->createEmailAccount($username, $password);
@@ -97,7 +97,7 @@ $response = $cpanel->createEmailAccount($username, $password);
 You will have to pass a full email address to be able to delete the account.
 
 ```php
-$cpanel = new Cpanel()
+$cpanel = new CPanel()
 $response = $cpanel->deleteEmailAccount('john.dansy@example.com');
 ``` 
 
@@ -105,7 +105,7 @@ $response = $cpanel->deleteEmailAccount('john.dansy@example.com');
 You will have to pass a full email address of which you want to get disk usage.
 
 ```php
-$cpanel = new Cpanel()
+$cpanel = new CPanel()
 $response = $cpanel->getDiskUsage('john.dansy@example.com');
 ``` 
 
@@ -113,7 +113,7 @@ $response = $cpanel->getDiskUsage('john.dansy@example.com');
 You will have to pass a full email address of which you want to get disk usage.
 
 ```php
-$cpanel = new Cpanel()
+$cpanel = new CPanel()
 $email = 'john.dansy@example.com';
 $quota = 1024;
 $response = $cpanel->increaseQuota($email,$quota);
